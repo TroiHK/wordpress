@@ -16,16 +16,17 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
  */
 
 // publicPath
-mix.config.publicPath = 'wp-content/themes/hkt';
+// mix.config.publicPath = 'wp-content/themes/hkt';
+const public_path = 'wp-content/themes/hkt/';
 
 // resourceRoot
 mix.config.resourceRoot = 'src';
 
 // Change fonts output folder
-mix.config.fileLoaderDirs.fonts = 'assets/fonts';
+mix.config.fileLoaderDirs.fonts = public_path + 'assets/fonts';
 
 // Change images output folder
-mix.config.fileLoaderDirs.images = 'assets/images';
+mix.config.fileLoaderDirs.images = public_path + 'assets/images';
 
 if ( mix.config.production ) {
     // production
@@ -54,10 +55,10 @@ if ( mix.config.production ) {
         }
     });
 
-    mix.js(mix.config.resourceRoot + '/assets/js/app.js', mix.config.publicPath + '/assets/js')
-        .js(mix.config.resourceRoot + '/assets/js/landing.js', mix.config.publicPath + '/assets/js')
-        .sass(mix.config.resourceRoot + '/assets/sass/app.scss', mix.config.publicPath + '/assets/css')
-        .sass(mix.config.resourceRoot + '/assets/sass/landing.scss', mix.config.publicPath + '/assets/css');
+    mix.js(mix.config.resourceRoot + '/assets/js/app.js', public_path + 'assets/js')
+        .js(mix.config.resourceRoot + '/assets/js/landing.js', public_path + 'assets/js')
+        .sass(mix.config.resourceRoot + '/assets/sass/app.scss', public_path + 'assets/css')
+        .sass(mix.config.resourceRoot + '/assets/sass/landing.scss', public_path + 'assets/css');
 
 } else {
     // development
@@ -80,11 +81,11 @@ if ( mix.config.production ) {
         }
     });
 
-    mix.js(mix.config.resourceRoot + '/assets/js/app.js', mix.config.publicPath + '/assets/js').sourceMaps()
-        .js(mix.config.resourceRoot + '/assets/js/landing.js', mix.config.publicPath + '/assets/js').sourceMaps()
-        .sass(mix.config.resourceRoot + '/assets/sass/app.scss', mix.config.publicPath + '/assets/css').sourceMaps()
-        .sass(mix.config.resourceRoot + '/assets/sass/landing.scss', mix.config.publicPath + '/assets/css').sourceMaps()
+    mix.js(mix.config.resourceRoot + '/assets/js/app.js', public_path + 'assets/js')
+        .js(mix.config.resourceRoot + '/assets/js/landing.js', public_path + 'assets/js')
+        .sass(mix.config.resourceRoot + '/assets/sass/app.scss', public_path + 'assets/css')
+        .sass(mix.config.resourceRoot + '/assets/sass/landing.scss', public_path + 'assets/css').sourceMaps()
         .browserSync({
-            proxy: 'http://hkt.local:8080'
+            proxy: 'http://hkt.local'
         });
 }

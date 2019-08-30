@@ -1,5 +1,5 @@
 </main>
-<footer id="footer" class="block-footer">
+<footer id="footer" class="block-footer py-5 bg-light">
   <div class="container">
     <p class="float-right">
       <a href="#">Back to top</a>

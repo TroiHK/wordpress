@@ -1,4 +1,4 @@
-require('slick-carousel');
+import 'slick-carousel';
 
 (function ($) {
     'use strict';
@@ -21,17 +21,18 @@ require('slick-carousel');
             slider.not('.slick-initialized').slick(
                 {
                     infinite: false,
-                    arrows: true,
                     speed: 300,
-                    slidesToShow: 6,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
-                    preletrow : slider.find('.hkt-prev'),
-                    nextArrow : slider.find('.hkt-next'),
+                    // variableWidth: true,
+                    swipeToSlide: true,
+                    prevArrow : slider.siblings('.slider-nav').find('.hkt-prev'),
+                    nextArrow : slider.siblings('.slider-nav').find('.hkt-next'),
                     responsive: [
                         {
                             breakpoint: 1024,
                             settings: {
-                                slidesToShow: 4,
+                                slidesToShow: 3,
                             }
                         },
                         {

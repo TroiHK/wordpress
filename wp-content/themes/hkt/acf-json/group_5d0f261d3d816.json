@@ -1,78 +1,7 @@
 {
     "key": "group_5d0f261d3d816",
     "title": "Home Page",
-    "fields": [
-        {
-            "key": "field_5d0f262d69488",
-            "label": "Les évènements",
-            "name": "les_evenements",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_5d0f263c69489",
-                    "label": "Title",
-                    "name": "title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_5d0f26506948a",
-                    "label": "Des",
-                    "name": "des",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": 4,
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_5d0f266c6948b",
-                    "label": "Button",
-                    "name": "button",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array"
-                }
-            ]
-        }
-    ],
+    "fields": [],
     "location": [
         [
             {
@@ -90,5 +19,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1561273980
+    "modified": 1567175038
 }
