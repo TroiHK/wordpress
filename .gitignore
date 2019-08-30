@@ -5,6 +5,9 @@
 !composer.json
 !readme.md
 !LICENSE
+!package.json
+!webpack.mix.js
+!/src
 
 #wp-content
 !wp-content/
